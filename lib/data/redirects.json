@@ -1,0 +1,262 @@
+[
+ {
+  "from": "/produto/uniforme-personalizado-para-o-seu-negocio",
+  "to": "/produto/camiseta-lisa-premium",
+  "name": "Camiseta Lisa Premium"
+ },
+ {
+  "from": "/produto/1-metro-dtf-textil",
+  "to": "/produto/dtf-textil?metros=1",
+  "name": "1 Metro DTF Têxtil"
+ },
+ {
+  "from": "/produto/1-metro-dtf-textil-editor",
+  "to": "/produto/dtf-textil?metros=1",
+  "name": "1 Metro DTF Têxtil – EDITOR"
+ },
+ {
+  "from": "/produto/10-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=10",
+  "name": "10 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/2-metro-dtf-textil-editor",
+  "to": "/produto/dtf-textil?metros=2",
+  "name": "2 Metro DTF Têxtil – EDITOR"
+ },
+ {
+  "from": "/produto/2-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=2",
+  "name": "2 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/3-metro-dtf-textil-editor",
+  "to": "/produto/dtf-textil?metros=3",
+  "name": "3 Metro DTF Têxtil – EDITOR"
+ },
+ {
+  "from": "/produto/3-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=3",
+  "name": "3 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/4-metro-dtf-textil-editor",
+  "to": "/produto/dtf-textil?metros=4",
+  "name": "4 Metro DTF Têxtil – EDITOR"
+ },
+ {
+  "from": "/produto/4-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=4",
+  "name": "4 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/5-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=5",
+  "name": "5 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/6-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=6",
+  "name": "6 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/7-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=7",
+  "name": "7 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/8-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=8",
+  "name": "8 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/9-metros-dtf-textil",
+  "to": "/produto/dtf-textil?metros=9",
+  "name": "9 Metros DTF Têxtil"
+ },
+ {
+  "from": "/produto/1-metro-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=1",
+  "name": "1 Metro DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/1-metro-dtf-textil-editor-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=1",
+  "name": "1 Metro DTF TEXTIL – EDITOR (60cm)"
+ },
+ {
+  "from": "/produto/10-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=10",
+  "name": "10 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/2-metro-dtf-textil-editor-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=2",
+  "name": "2 Metro DTF TEXTIL – EDITOR (60cm)"
+ },
+ {
+  "from": "/produto/2-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=2",
+  "name": "2 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/3-metro-dtf-textil-editor-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=3",
+  "name": "3 Metro DTF TEXTIL – EDITOR (60cm)"
+ },
+ {
+  "from": "/produto/3-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=3",
+  "name": "3 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/4-metro-dtf-textil-editor-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=4",
+  "name": "4 Metro DTF TEXTIL – EDITOR (60cm)"
+ },
+ {
+  "from": "/produto/4-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=4",
+  "name": "4 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/5-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=5",
+  "name": "5 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/6-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=6",
+  "name": "6 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/7-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=7",
+  "name": "7 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/8-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=8",
+  "name": "8 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/9-metros-dtf-textil-60cm",
+  "to": "/produto/dtf-textil-60cm?metros=9",
+  "name": "9 Metros DTF Têxtil (60cm)"
+ },
+ {
+  "from": "/produto/1-metro-dtf-uv",
+  "to": "/produto/dtf-uv?metros=1",
+  "name": "1 Metro DTF UV"
+ },
+ {
+  "from": "/produto/1-metro-dtf-uv-editor",
+  "to": "/produto/dtf-uv?metros=1",
+  "name": "1 Metro DTF UV – EDITOR"
+ },
+ {
+  "from": "/produto/10-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=10",
+  "name": "10 Metros DTF UV"
+ },
+ {
+  "from": "/produto/2-metro-dtf-uv-editor",
+  "to": "/produto/dtf-uv?metros=2",
+  "name": "2 Metro DTF UV – EDITOR"
+ },
+ {
+  "from": "/produto/2-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=2",
+  "name": "2 Metros DTF UV"
+ },
+ {
+  "from": "/produto/3-metro-dtf-uv-editor",
+  "to": "/produto/dtf-uv?metros=3",
+  "name": "3 Metro DTF UV – EDITOR"
+ },
+ {
+  "from": "/produto/3-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=3",
+  "name": "3 Metros DTF UV"
+ },
+ {
+  "from": "/produto/4-metro-dtf-uv-editor",
+  "to": "/produto/dtf-uv?metros=4",
+  "name": "4 Metro DTF UV – EDITOR"
+ },
+ {
+  "from": "/produto/4-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=4",
+  "name": "4 Metros DTF UV"
+ },
+ {
+  "from": "/produto/5-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=5",
+  "name": "5 Metros DTF UV"
+ },
+ {
+  "from": "/produto/6-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=6",
+  "name": "6 Metros DTF UV"
+ },
+ {
+  "from": "/produto/7-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=7",
+  "name": "7 Metros DTF UV"
+ },
+ {
+  "from": "/produto/8-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=8",
+  "name": "8 Metros DTF UV"
+ },
+ {
+  "from": "/produto/9-metros-dtf-uv",
+  "to": "/produto/dtf-uv?metros=9",
+  "name": "9 Metros DTF UV"
+ },
+ {
+  "from": "/produto/a3-dtf-textil",
+  "to": "/produto/folha-dtf-textil?tamanho=A3",
+  "name": "A3 DTF Têxtil"
+ },
+ {
+  "from": "/produto/a3-editor",
+  "to": "/produto/folha-dtf-textil?tamanho=A3",
+  "name": "A3 Têxtil – EDITOR"
+ },
+ {
+  "from": "/produto/a4-dtf-textil",
+  "to": "/produto/folha-dtf-textil?tamanho=A4",
+  "name": "A4 DTF Têxtil"
+ },
+ {
+  "from": "/produto/a4-dtf-textil-2",
+  "to": "/produto/folha-dtf-textil?tamanho=A4",
+  "name": "A4 DTF Têxtil"
+ },
+ {
+  "from": "/produto/a4-editor",
+  "to": "/produto/folha-dtf-textil?tamanho=A4",
+  "name": "A4 Têxtil – EDITOR"
+ },
+ {
+  "from": "/produto/a3-dtf-uv",
+  "to": "/produto/folha-dtf-uv?tamanho=A3",
+  "name": "A3 DTF UV"
+ },
+ {
+  "from": "/produto/a3-uv-editor",
+  "to": "/produto/folha-dtf-uv?tamanho=A3",
+  "name": "A3 UV – EDITOR"
+ },
+ {
+  "from": "/produto/a4-dtf-uv",
+  "to": "/produto/folha-dtf-uv?tamanho=A4",
+  "name": "A4 DTF UV"
+ },
+ {
+  "from": "/produto/a4-uv-editor",
+  "to": "/produto/folha-dtf-uv?tamanho=A4",
+  "name": "A4 UV – EDITOR"
+ }
+]
