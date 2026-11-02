@@ -5,7 +5,6 @@ import { useRef, useState } from "react";
 import { COLORS, getProduct } from "@/lib/catalog";
 import { brl } from "@/lib/format";
 import type { ColorId, GarmentProduct, Product } from "@/lib/types";
-import { DesignArt } from "./estampas";
 import { Garment } from "./garment";
 import { ProductCard } from "./product-card";
 import { ButtonLink } from "./ui";
@@ -17,11 +16,9 @@ export function ShirtShowcase() {
     <div className="grid items-center gap-8 md:grid-cols-[1fr_1.05fr]">
       <div className="relative mx-auto aspect-square w-full max-w-[460px]">
         <div className="absolute inset-6 rounded-full bg-[radial-gradient(circle,rgba(143,46,230,0.45),transparent_68%)] blur-2xl" />
-        <Garment key={color} shape="camiseta" color={COLORS[color].hex} className="relative h-full w-full animate-pop">
-          <DesignArt id="onda-itajai" embed={{ x: 145, y: 120, size: 110 }} />
-        </Garment>
+        <Garment key={color} shape="camiseta" color={COLORS[color].hex} className="relative h-full w-full animate-pop" />
         <span className="absolute bottom-6 left-1/2 -translate-x-1/2 rounded-full border border-white/15 bg-ink/50 px-4 py-1.5 text-[13px] font-medium backdrop-blur-md">
-          {COLORS[color].name} · com a estampa Onda Itajaí
+          Camiseta Lisa Premium · {COLORS[color].name}
         </span>
       </div>
       <div>

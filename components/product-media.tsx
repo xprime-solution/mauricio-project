@@ -1,15 +1,14 @@
 import Image from "next/image";
 import { COLORS } from "@/lib/catalog";
 import type { ColorId, Product } from "@/lib/types";
-import { DesignArt } from "./estampas";
 import { Garment } from "./garment";
 
 /** Imagem principal de um produto: foto, peça na cor escolhida ou arte da estampa. */
 export function ProductMedia({ product, color, sizes = "(max-width: 768px) 50vw, 25vw", priority, className = "" }: { product: Product; color?: ColorId; sizes?: string; priority?: boolean; className?: string }) {
   if (product.kind === "estampa") {
     return (
-      <div className={`relative grid h-full w-full place-items-center bg-[radial-gradient(circle_at_50%_40%,#2b0b49,#141119_70%)] ${className}`}>
-        <DesignArt id={product.design} className="h-[78%] w-[78%] drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)] transition-transform duration-700 group-hover:scale-[1.06]" />
+      <div className={`relative grid h-full w-full place-items-center overflow-hidden ${className}`} style={{ background: product.artBg }}>
+        <Image src={product.art} alt={product.name} width={313} height={313} sizes={sizes} priority={priority} className="h-auto w-[min(92%,313px)] transition-transform duration-700 group-hover:scale-[1.06]" />
       </div>
     );
   }

@@ -9,7 +9,6 @@ import { brl } from "@/lib/format";
 import { addToCart, track, useStore } from "@/lib/store";
 import type { ArtFile, ColorId, DesignProduct, GarmentProduct, MetroProduct, Product, SheetProduct, Size } from "@/lib/types";
 import { ArtUpload } from "./art-upload";
-import { DesignArt } from "./estampas";
 import { Garment } from "./garment";
 import { useHydrated } from "./motion";
 import { ProductCard } from "./product-card";
@@ -31,15 +30,15 @@ function Gallery({ product, slides, active, setActive }: { product: Product; sli
       );
     if (product.kind === "estampa" && s.kind === "design")
       return (
-        <div className="grid h-full w-full place-items-center bg-[radial-gradient(circle_at_50%_40%,#2b0b49,#141119_70%)]">
-          <DesignArt id={product.design} className="h-[78%] w-[78%]" />
+        <div className="grid h-full w-full place-items-center" style={{ background: product.artBg }}>
+          <Image src={product.art} alt={product.name} width={313} height={313} priority={big} className={big ? "h-auto w-[313px] max-w-[86%]" : "h-auto w-[86%]"} />
         </div>
       );
     if (product.kind === "estampa" && s.kind === "design-on")
       return (
         <div className="grid h-full w-full place-items-center bg-[radial-gradient(circle_at_50%_38%,#4a3f5a,#1b1722_74%)]">
           <Garment key={s.color} shape="camiseta" color={COLORS[s.color].hex} className={`h-[86%] w-[86%] ${big ? "animate-pop" : ""}`}>
-            <DesignArt id={product.design} embed={{ x: 130, y: 104, size: 140 }} />
+            <image href={product.art} x={140} y={108} width={120} height={120} preserveAspectRatio="xMidYMid meet" />
           </Garment>
         </div>
       );
@@ -388,7 +387,10 @@ export function ProductView({ slug, metros, tamanho }: { slug: string; metros?: 
 
   const slides: Slide[] = useMemo(() => {
     if (product.kind === "vestuario") return [{ kind: "garment", color }, ...product.images.map((src) => ({ kind: "photo" as const, src }))];
-    if (product.kind === "estampa") return [{ kind: "design" }, ...(["preto", "branco", "azul-marinho", "vermelho"] as ColorId[]).map((c) => ({ kind: "design-on" as const, color: c }))];
+    if (product.kind === "estampa") {
+      const tee: ColorId | null = product.artBg === "#ffffff" ? "branco" : product.artBg === "#181818" ? "preto" : null;
+      return [{ kind: "design" }, ...(tee ? [{ kind: "design-on" as const, color: tee }] : []), { kind: "photo" as const, src: "/images/dtf4u/producao-hustle.jpg" }];
+    }
     return product.images.map((src) => ({ kind: "photo" as const, src }));
   }, [product, color]);
 
@@ -396,10 +398,10 @@ export function ProductView({ slug, metros, tamanho }: { slug: string; metros?: 
   const related = useMemo(() => {
     const pool =
       product.category === "impressao-dtf"
-        ? ["camiseta-lisa-premium", "estampa-tigre-neon", "camisa-polo", "dtf-uv"]
+        ? ["camiseta-lisa-premium", "estampa-4", "camisa-polo", "dtf-uv"]
         : product.kind === "vestuario"
-          ? ["dtf-textil-60cm", "estampa-onda-itajai", "folha-dtf-textil", "moletom-canguru-premium", "camiseta-lisa-premium"]
-          : ["dtf-textil-60cm", "camiseta-lisa-premium", "folha-dtf-uv", "estampa-game-over", "dtf-uv"];
+          ? ["dtf-textil-60cm", "estampa-1", "folha-dtf-textil", "moletom-canguru-premium", "camiseta-lisa-premium"]
+          : ["dtf-textil-60cm", "camiseta-lisa-premium", "folha-dtf-uv", "estampa-5", "dtf-uv"];
     return pool
       .filter((x) => x !== product.slug)
       .map((x) => getProduct(x))

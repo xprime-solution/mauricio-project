@@ -61,11 +61,12 @@ export interface GarmentProduct extends BaseProduct {
 
 export interface DesignProduct extends BaseProduct {
   kind: "estampa";
-  design: DesignId;
+  /** arte publicada da estampa e a cor de fundo do quadro */
+  art: string;
+  artBg: string;
   sizes: { id: "A4" | "A3"; label: string; price: number }[];
 }
 
-export type DesignId = "onda-itajai" | "tigre-neon" | "cafe-forte" | "game-over" | "astronauta" | "cacto-pop";
 
 export type Product = MetroProduct | SheetProduct | GarmentProduct | DesignProduct;
 

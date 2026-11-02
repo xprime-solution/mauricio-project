@@ -20,7 +20,7 @@ import type {
   TrackEvent,
 } from "./types";
 
-const KEY = "dtf4u-loja:v1";
+const KEY = "dtf4u-loja:v2";
 const PIX_MINUTES = 30;
 
 export interface Account {
@@ -92,8 +92,8 @@ function seedOrders(now: number): { orders: Order[]; events: TrackEvent[]; logs:
     { code: 10463, who: 2, hours: 240, lines: [["dtf-textil", "4", 1], ["camiseta-lisa-premium", "CAM-BRA-M", 6], ["camiseta-lisa-premium", "CAM-BRA-G", 6]], arts: { "dtf-textil": [art("rocha-personalizados-formatura.png", 6210)] }, status: "entregue", method: "boleto", ship: "pac", browser: false },
     { code: 10464, who: 0, hours: 216, lines: [["dtf-textil-60cm", "3", 1], ["camiseta-lisa-premium", "CAM-AZM-P", 4], ["camiseta-lisa-premium", "CAM-AZM-M", 8], ["camiseta-lisa-premium", "CAM-AZM-G", 8], ["camiseta-lisa-premium", "CAM-AZM-GG", 4]], arts: { "dtf-textil-60cm": [art("estudio-mare-colecao-verao-frente.png", 4380), art("estudio-mare-colecao-verao-costas.png", 4950)] }, status: "entregue", method: "pix", ship: "jadlog" },
     { code: 10465, who: 5, hours: 190, lines: [["camiseta-dry-fit", "DRY-BRA-M", 10], ["camiseta-dry-fit", "DRY-BRA-G", 10], ["camiseta-dry-fit", "DRY-BRA-GG", 5], ["dtf-textil-60cm", "2", 1]], arts: { "dtf-textil-60cm": [art("arena-fut-sete-numeros-1-a-25.pdf", 9870)] }, status: "enviado", method: "cartao", ship: "pac" },
-    { code: 10466, who: 8, hours: 168, lines: [["camiseta-lisa-premium", "CAM-PRT-P", 3], ["camiseta-lisa-premium", "CAM-PRT-M", 5], ["camiseta-lisa-premium", "CAM-PRT-G", 4], ["estampa-cafe-forte", "A4", 12]], status: "entregue", method: "pix", ship: "retirada" },
-    { code: 10467, who: 3, hours: 150, lines: [["moletom-canguru-premium", "MOL-AZM-M", 6], ["moletom-canguru-premium", "MOL-AZM-G", 6], ["moletom-canguru-premium", "MOL-AZM-GG", 3], ["estampa-onda-itajai", "A3", 15], ["dtf-textil-60cm", "2", 1]], arts: { "dtf-textil-60cm": [art("sul-surf-co-logo-manga.png", 1960)] }, status: "enviado", method: "pix", ship: "sedex", browser: false },
+    { code: 10466, who: 8, hours: 168, lines: [["camiseta-lisa-premium", "CAM-PRT-P", 3], ["camiseta-lisa-premium", "CAM-PRT-M", 5], ["camiseta-lisa-premium", "CAM-PRT-G", 4], ["estampa-3", "A4", 12]], status: "entregue", method: "pix", ship: "retirada" },
+    { code: 10467, who: 3, hours: 150, lines: [["moletom-canguru-premium", "MOL-AZM-M", 6], ["moletom-canguru-premium", "MOL-AZM-G", 6], ["moletom-canguru-premium", "MOL-AZM-GG", 3], ["estampa-1", "A3", 15], ["dtf-textil-60cm", "2", 1]], arts: { "dtf-textil-60cm": [art("sul-surf-co-logo-manga.png", 1960)] }, status: "enviado", method: "pix", ship: "sedex", browser: false },
     { code: 10468, who: 10, hours: 120, lines: [["dtf-uv", "2", 1], ["camiseta-lisa-premium", "CAM-BRA-P", 5], ["camiseta-lisa-premium", "CAM-BRA-M", 5]], arts: { "dtf-uv": [art("costa-moda-praia-tags-copos.png", 2770)] }, status: "enviado", method: "cartao", ship: "sedex" },
     { code: 10469, who: 4, hours: 96, lines: [["folha-dtf-textil", "A3", 4], ["camiseta-lisa-premium", "CAM-VRM-M", 2], ["camiseta-lisa-premium", "CAM-VRM-G", 2]], arts: { "folha-dtf-textil": [art("atelie-lopes-bordado-floral.png", 3640)] }, status: "producao", method: "pix", ship: "pac" },
     { code: 10470, who: 11, hours: 72, lines: [["camiseta-dry-fit", "DRY-PRT-M", 12], ["camiseta-dry-fit", "DRY-PRT-G", 12], ["camiseta-dry-fit", "DRY-PRT-GG", 6], ["camiseta-dry-fit", "DRY-PRT-G1", 2], ["dtf-textil-60cm", "4", 1]], arts: { "dtf-textil-60cm": [art("nunes-academia-equipe-2026.png", 7310)] }, status: "producao", method: "boleto", ship: "jadlog" },
@@ -102,7 +102,7 @@ function seedOrders(now: number): { orders: Order[]; events: TrackEvent[]; logs:
     { code: 10473, who: 7, hours: 20, lines: [["camisa-polo", "POL-AZM-M", 8], ["camisa-polo", "POL-AZM-G", 8], ["camisa-polo", "POL-AZM-GG", 4], ["folha-dtf-textil", "A4", 20]], arts: { "folha-dtf-textil": [art("almeida-eventos-logo-peito.png", 1250)] }, status: "pago", method: "pix", ship: "retirada" },
     { code: 10474, who: 12, hours: 6, lines: [["dtf-uv", "5", 1]], arts: { "dtf-uv": [art("lima-grafica-brindes-fim-de-ano.pdf", 12650)] }, status: "pago", method: "pix", ship: "jadlog" },
     { code: 10475, who: 13, hours: 3, lines: [["camiseta-lisa-premium", "CAM-PRT-M", 4], ["camiseta-lisa-premium", "CAM-PRT-G", 4], ["dtf-textil-60cm", "1", 1]], arts: { "dtf-textil-60cm": [art("pires-sports-escudo.png", 980)] }, status: "cancelado", method: "pix", ship: "pac" },
-    { code: 10476, who: 6, hours: 0.15, lines: [["estampa-tigre-neon", "A4", 10], ["folha-dtf-uv", "A4", 5]], arts: { "folha-dtf-uv": [art("jp-brindes-adesivos-tigre.png", 2140)] }, status: "aguardando", method: "pix", ship: "sedex" },
+    { code: 10476, who: 6, hours: 0.15, lines: [["estampa-4", "A4", 10], ["folha-dtf-uv", "A4", 5]], arts: { "folha-dtf-uv": [art("jp-brindes-adesivos-tigre.png", 2140)] }, status: "aguardando", method: "pix", ship: "sedex" },
   ];
 
   const orders: Order[] = [];

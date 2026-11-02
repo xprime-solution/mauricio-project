@@ -5,7 +5,6 @@ import type { CSSProperties } from "react";
 import { COLORS, CATEGORIES, PRODUCTS, getProduct } from "@/lib/catalog";
 import { brl } from "@/lib/format";
 import type { MetroProduct } from "@/lib/types";
-import { DesignArt } from "@/components/estampas";
 import { Garment } from "@/components/garment";
 import { Faq, ProductRail, ShirtShowcase } from "@/components/home-parts";
 import { Counter, Reveal } from "@/components/motion";
@@ -86,12 +85,12 @@ export default function HomePage() {
 
           <div className="relative mx-auto w-full max-w-[560px] animate-rise [animation-delay:200ms]">
             <div className="relative aspect-[5/4] overflow-hidden rounded-[2rem] border border-white/12 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.8)]">
-              <Image src="/images/impressora-dtf-filme.jpg" alt="Impressora DTF imprimindo artes coloridas em filme" fill priority sizes="(max-width: 1024px) 92vw, 560px" className="object-cover" />
+              <Image src="/images/dtf4u/producao-impressora.jpg" alt="Filme DTF com o logo da DTF4U saindo da impressora" fill priority sizes="(max-width: 1024px) 92vw, 560px" className="object-cover object-[50%_42%]" />
               <div className="absolute inset-0 bg-gradient-to-t from-grape-950/80 via-transparent to-transparent" />
             </div>
             <div className="absolute -bottom-8 -left-4 w-[46%] rounded-3xl border border-white/15 bg-ink/45 p-3 shadow-lift backdrop-blur-xl sm:-left-10">
               <Garment shape="camiseta" color={COLORS.preto.hex} className="w-full">
-                <DesignArt id="tigre-neon" embed={{ x: 140, y: 112, size: 120 }} />
+                <image href="/images/dtf4u/estampa-4.png" x={140} y={112} width={120} height={120} preserveAspectRatio="xMidYMid meet" />
               </Garment>
               <p className="mt-1 text-center text-[12px] font-medium text-soft">Camiseta lisa + estampa DTF</p>
             </div>
@@ -234,6 +233,30 @@ export default function HomePage() {
           />
         </Reveal>
         <ProductRail products={bestsellers} />
+      </section>
+
+      {/* FEITO NA DTF4U */}
+      <section className="mx-auto max-w-7xl px-4 pt-24 md:px-6">
+        <Reveal>
+          <SectionTitle eyebrow="Feito na DTF4U" title="Estampas que já saíram da nossa produção" text="Cores vivas, detalhes finos e acabamento que aguenta lavagem, em peças claras e escuras." />
+        </Reveal>
+        <div className="columns-2 gap-4 md:columns-3 [&>*]:mb-4">
+          {[
+            ["producao-impressora", "Filme DTF saindo da impressora", "aspect-[9/14]"],
+            ["producao-porsche", "Arte com traço fino impressa no filme", "aspect-[9/12]"],
+            ["producao-faroeste", "Ilustração colorida aplicada no tecido", "aspect-[9/13]"],
+            ["producao-hustle", "A mesma arte em peças preta e branca", "aspect-[9/12]"],
+            ["producao-retrato", "Retrato com meio-tom em alta definição", "aspect-[9/14]"],
+            ["producao-pedidos", "Pedidos embalados e prontos para envio", "aspect-[9/12]"],
+          ].map(([f, cap, ratio], i) => (
+            <Reveal key={f} delay={(i % 3) * 80} className="break-inside-avoid">
+              <figure className={`group relative ${ratio} overflow-hidden rounded-3xl border border-line shadow-card`}>
+                <Image src={`/images/dtf4u/${f}.jpg`} alt={cap} fill sizes="(max-width: 768px) 46vw, 30vw" className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]" />
+                <figcaption className="absolute inset-x-3 bottom-3 rounded-2xl border border-white/15 bg-ink/45 px-3.5 py-2.5 text-[13px] font-medium backdrop-blur-xl">{cap}</figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
       </section>
 
       {/* PARA MARCAS */}
